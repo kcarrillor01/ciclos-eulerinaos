@@ -2,7 +2,7 @@
 
 void juego1() {
   int n= 6;//cantidad de lineas por juego
-  int [][]usuario=new int[5][5]; 
+  int [][]comparacion=new int[5][5]; 
   int []x= {100, 900, 500, 100, 900};
   int []y= {100, 100, 250, 500, 500};
   int [][] conexion={
@@ -14,12 +14,12 @@ void juego1() {
   };
 
   //("definitivamente entro");
-  jugar(n, x, y, conexion, usuario);
+  jugar(n, x, y, conexion, comparacion);
 }
 
 void juego2() {
   int n=12;
-  int [][]usuario=new int[11][11];
+  int [][]comparacion=new int[11][11];
   int []x= {500, 200, 300, 700, 800, 450, 550, 300, 450, 550, 700};
   int []y= {100, 200, 200, 200, 200, 350, 350, 500, 500, 500, 500};
   int [][] conexion={
@@ -35,13 +35,13 @@ void juego2() {
     {0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1}, //p10
     {0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0}  //p11 
   };
-  jugar(n, x, y, conexion, usuario);
+  jugar(n, x, y, conexion, comparacion);
 }
 
 
 void juego3() {
   int n=13;
-  int [][]usuario=new int[10][10];
+  int [][]comparacion=new int[10][10];
   int []x= {100, 500, 900, 500, 400, 600, 500, 100, 500, 900};
   int []y= {100, 100, 100, 200, 300, 300, 400, 500, 500, 500};
   int [][] conexion={
@@ -56,12 +56,12 @@ void juego3() {
     {0, 0, 0, 0, 0, 0, 1, 1, 0, 1}, //p9
     {0, 0, 1, 0, 0, 0, 0, 0, 1, 0}  //p10
   };  
-  jugar(n, x, y, conexion, usuario);
+  jugar(n, x, y, conexion, comparacion);
 }
 
 void juego4() {
   int n=10 ;
-  int [][]usuario=new int[6][76];
+  int [][]comparacion=new int[6][76];
   int []x= {200, 800, 100, 900, 200, 800};
   int []y= {100, 100, 300, 300, 500, 500};
   int [][] conexion={
@@ -72,12 +72,12 @@ void juego4() {
     {1, 1, 1, 0, 0, 1}, //p5
     {1, 1, 0, 1, 1, 0}, //p6
   };  
-  jugar(n, x, y, conexion, usuario);
+  jugar(n, x, y, conexion, comparacion);
 }
 
 void juego5() {
   int n=14;
-  int [][]usuario=new int[10][10];
+  int [][]comparacion=new int[10][10];
 
   int []x= {500, 100, 350, 650, 900, 100, 350, 650, 900, 500};
   int []y= {100, 200, 200, 200, 200, 400, 400, 400, 400, 500};
@@ -93,11 +93,11 @@ void juego5() {
     {0, 0, 0, 1, 0, 0, 0, 1, 0, 0}, //p9
     {0, 0, 0, 0, 0, 0, 1, 1, 0, 0}  //p10
   };  
-  jugar(n, x, y, conexion, usuario);
+  jugar(n, x, y, conexion, comparacion);
 }
 void juego6() {             
   int n=16;
-  int [][]usuario=new int[8][8];
+  int [][]comparacion=new int[8][8];
   int []x= {400, 600, 200, 800, 200, 800, 400, 600};
   int []y= {100, 100, 230, 230, 360, 360, 490, 490};
   int [][] conexion={
@@ -110,5 +110,5 @@ void juego6() {
     {1, 0, 0, 1, 1, 0, 0, 1}, //p7
     {0, 1, 1, 0, 0, 1, 1, 0}, //p8
   };
-  jugar(n, x, y, conexion, usuario);
+  jugar(n, x, y, conexion, comparacion);
 }

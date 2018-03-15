@@ -1,5 +1,5 @@
 
-void jugar(int n, int x[], int y[], int conexion[][], int usuario[][]) {
+void jugar(int n, int x[], int y[], int conexion[][], int comparacion[][]) {
 
   if (aux==0) {
     if (mousePressed ==true) {
@@ -30,8 +30,8 @@ void jugar(int n, int x[], int y[], int conexion[][], int usuario[][]) {
             lapiz[0]=lapiz[2];
             lapiz[1]=lapiz[3];
             b=a;
-            usuario[a][b]=1;
-            usuario[b][a]=1;
+            comparacion[a][b]=1;
+            comparacion[b][a]=1;
             //Redibujar las elipses
             for (int i=0; i<x.length; i++) {
               fill(255);
@@ -44,17 +44,17 @@ void jugar(int n, int x[], int y[], int conexion[][], int usuario[][]) {
       }
     }
   }
-  condicion(n, usuario, conexion);
+  condicion(n, comparacion, conexion);
   
 }
 
-void condicion(int n, int usuario[][],int conexion[][]) {
+void condicion(int n, int comparacion[][],int conexion[][]) {
 if (cont==n) {
      
 
-    for (int i=0; i<usuario.length; i++) {
-      for (int j=0; j<usuario.length; j++) {      
-        if (usuario[i][j]!=conexion[i][j]) {
+    for (int i=0; i<comparacion.length; i++) {
+      for (int j=0; j<comparacion.length; j++) {      
+        if (comparacion[i][j]!=conexion[i][j]) {
           perder=1;
         }
       }
