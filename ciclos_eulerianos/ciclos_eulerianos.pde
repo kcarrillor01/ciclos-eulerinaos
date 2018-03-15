@@ -53,10 +53,10 @@ void draw() {
       juego6();
     }
   } 
-  if (estado==4) {
+  if (estado==4) {//mostrar que gano
     goodGameOver();
   }  
-  if (estado==5) {
+  if (estado==5) {//mostrar que perdio
   
     badGameOver();
   }
