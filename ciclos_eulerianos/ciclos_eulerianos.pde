@@ -1,3 +1,5 @@
+//TALLER 1 DE KEVIN FELIPE CARRILLO ROMERO PARA LA CLASE DE PROGRAMACION ORIENTADA A OBJETOS, kcarrillor01 en github 
+
 PImage inicio, ganas, pierdes, escoge, niveles, hojaPapel;
 int estado=0, aux=0, cont=0, nivel, perder=0, b;
 int [] lapiz= new int [4];
